@@ -1,0 +1,44 @@
+@import 'color-palette.css';
+@import 'button.css';
+@import 'input.css';
+@import 'toastr.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--primary-color);
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: var(--gray-shade);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
