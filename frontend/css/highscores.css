@@ -1,0 +1,59 @@
+@import 'main.css';
+
+.rss-icon {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.evaluation-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+.grid-header .grid-item {
+    background-color: var(--dark-gray-shade);
+    font-weight: bold;
+}
+
+.grid-container {
+    border: 1px solid var(--dark-gray-shade);
+    height: auto;
+    max-height: 400px;
+    overflow: auto;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+}
+
+.grid-row:nth-child(even) {
+    background-color: var(--gray-shade);
+}
+
+.grid-row:not(:last-child) {
+    border-bottom: 1px solid var(--dark-gray-shade);
+}
+
+.grid-item {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.grid-item-special {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
