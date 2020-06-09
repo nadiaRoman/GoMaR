@@ -12,6 +12,7 @@ toastrXhr.send();
 function closeToastr() {
     const toastr = document.getElementById('toastr-container');
     toastr.classList.remove("toastr-success");
+    toastr.classList.remove("toastr-orange");
     toastr.classList.remove("toastr-fail");
 }
 

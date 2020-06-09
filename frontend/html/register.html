@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>GoMaR</title>
-  <link rel="stylesheet" href="../css/register.css">
+  <link rel="stylesheet" href="../css/login.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
   <link rel="icon" href="data:,">
 
@@ -21,14 +21,15 @@
     <div class="line">
     </div>
     <div class="login-container">
-      <img class="artwork" src="https://img.icons8.com/clouds/400/000000/meeting.png">
+      <img class="artwork" alt="people" src="https://img.icons8.com/clouds/400/000000/meeting.png">
       <div class="login-form">
+        <input id="publicname" type="text" placeholder="Public name" />
         <input id="username" type="text" placeholder="Username" />
         <input id="password" type="password" placeholder="Password" />
         <input id="confirm-password" type="password" placeholder="Confirm password" />
         <div>
           <button onclick="registerUser()" class="primary-btn">Register</button>
-          <a href="/login"><button class="secondary-btn">Go to login</button></a>
+          <a href="/login"><div class="secondary-btn">Go to login</div></a>
         </div>
       </div>
     </div>

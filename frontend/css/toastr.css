@@ -24,6 +24,13 @@
     cursor: pointer;
 }
 
+.toastr-orange {
+    display: block;
+    background-color: var(--orange);
+    border-left: 6px solid var(--dark-orange);
+    cursor: pointer;
+}
+
 .toastr h1{
     font-size: 14px;
 }

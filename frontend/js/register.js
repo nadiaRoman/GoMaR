@@ -1,17 +1,19 @@
 function registerUser() {
     const username = document.getElementById("username");
+    const publicname = document.getElementById("publicname");
     const password = document.getElementById("password");
     const confirmPassword = document.getElementById("confirm-password");
 
     validateAll();
 
-    if (username.classList.contains("invalid") ||
+    if (publicname.classList.contains("invalid") ||
+        username.classList.contains("invalid") ||
         password.classList.contains("invalid") ||
         confirmPassword.classList.contains("invalid")) {
         return;
     }
 
-    const data = { username: username.value, password: password.value };
+    const data = { publicname: publicname.value, username: username.value, password: password.value };
 
     fetch('http://127.0.0.1:3333/createAccount', {
         method: 'POST',
@@ -43,9 +45,20 @@ body.addEventListener("keyup", function (event) {
 });
 
 function validateAll() {
+    validatePublicnameField();
     validateUsernameField();
     validatePasswordField();
     validateConfirmPasswordField();
+}
+
+function validatePublicnameField() {
+    const publicname = document.getElementById("publicname");
+
+    if (!publicname.value) {
+        publicname.classList.add("invalid");
+    } else {
+        publicname.classList.remove("invalid");
+    }
 }
 
 function validateUsernameField() {
@@ -78,7 +91,9 @@ function validateConfirmPasswordField() {
         confirmPassword.classList.remove("invalid");
     }
 }
-
+document.getElementById("publicname").addEventListener("keyup", function (event) {
+    validatePublicnameField();
+});
 document.getElementById("username").addEventListener("keyup", function (event) {
     validateUsernameField();
 });

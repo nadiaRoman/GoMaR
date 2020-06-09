@@ -19,21 +19,19 @@ function loginUser() {
         body: JSON.stringify(data),
     })
         .then((response) => {
-            console.log(response);
             response.json().then(function (data) {
                 if (response.status == 200) {
-                    console.log(data);
                     if (data.authToken) {
                         localStorage.setItem("authToken", data.authToken);
                         window.location.replace("http://localhost:3000/");
                     }
-                    console.log(response.status);
                 } else {
                     displayToastr('fail', data.response);
                 }
             });
         })
         .catch((error) => {
+            displayToastr('fail', "Server is down, try again later");
             console.error('Error:', error);
         });
 }
