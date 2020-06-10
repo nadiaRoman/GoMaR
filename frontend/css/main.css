@@ -1,9 +1,13 @@
 @import 'color-palette.css';
 @import 'button.css';
+@import 'checkbox.css';
+@import 'radiobutton.css';
+@import 'dropdown.css';
 @import 'input.css';
 @import 'header.css';
 @import 'container.css';
 @import 'footer.css';
+@import 'star.css';
 @import 'toastr.css';
 
 * {
@@ -26,6 +30,14 @@ a {
   color: inherit;
   text-decoration: inherit;
   font-weight: inherit;
+}
+
+.wrong {
+  border: 2px solid var(--red);
+}
+
+.valid {
+  border: 2px solid var(--green);
 }
 
 ::-webkit-scrollbar {
