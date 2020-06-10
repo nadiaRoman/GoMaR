@@ -1,0 +1,1255 @@
+{
+	"info": {
+		"_postman_id": "47cae4ad-5024-445c-9a00-8025025e51d1",
+		"name": "gomarApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tags",
+			"item": [
+				{
+					"name": "http://127.0.0.1:3333/tags",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "WMxI7iSjaVG250G9YJDXJkNYyRQC6CfuGgRvn2hc8OXEKMjy9cSYqmRrUxkcFpbs7LpQP9Vqfw1iUh9t70TOOb2zICe2BcpZeMKCUdNpe0z77U8ZmMQMxaBvr8CQw6p1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Just delete this\"\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/tags",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/tags",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xLm6flFmq3IUiRPUxWapEshi1jBtmqYqqj7ZSOxasnT0hw6tcOpFtIfDfmp6iZPyHqhYtxMPSM84YR1McFEEeKnRvBgdjsh7m561BlDfrPOl4LG1q8HXKRS04cLZsBQj",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/tags",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"tags"
+							],
+							"query": [
+								{
+									"key": "Authorization",
+									"value": "Bearer caca",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/tags",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xLm6flFmq3IUiRPUxWapEshi1jBtmqYqqj7ZSOxasnT0hw6tcOpFtIfDfmp6iZPyHqhYtxMPSM84YR1McFEEeKnRvBgdjsh7m561BlDfrPOl4LG1q8HXKRS04cLZsBQj",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"5e75ec7093e5ca1ca0f9c5b2\",\n\t\"name\": \"Test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/tags",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/tags",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "nQ7FVRr622H3ujKJ6A1soo3wUMOHOL4MRHhJSU8qFo0IL8adwtK7bVfEiOD2NYeHKVg5Mpr7piNTOFOYSwWVuradaKdvzGNxufPljCcr0044yeXTMv9B2fCp86nAKGEQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\": \"5e792ae8025d023a80dc8923\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/tags",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"tags"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GoodManners",
+			"item": [
+				{
+					"name": "http://127.0.0.1:3333/goodManners",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "oxYTZ6iKNXcq5wbYdIfECLbFCQ8R95bnDD65iOa9vsayCB0Z1AHgRpdTyZabEUIC6rXn1bu5l9UlunBMG0PX8Sh8xk0Wpj5EJFMUDAIYeyUoacRT0ArzYzctu8sJ4UVq",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"manner\": \"Be good with others\",\n\t\"tags\": [\"5e75ec8c93e5ca1ca0f9c5b3\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/goodManners",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"goodManners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/goodManners?selection=random",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "XBPMBSTvgcsdT2weAZUD95AyxPKBGXgAERXtAGYT6amhPygWlN8vlUzTPBg0i3ZbTdHwUS3oKzh22mTWw8IVgkXKSfCYY7EGWeelz9wMdwRgH4Yasb8JVOK7Qkml4QWq",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/goodManners?selection=random",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"goodManners"
+							],
+							"query": [
+								{
+									"key": "selection",
+									"value": "random"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/goodManners",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "ahwZ5DnpvJk14MK0y1PBcB6YYsDdtxyIaQLJ8Ok6sTBiXj8tHRSBy27QSNOPuTIXXa1u4JT4kdueIIJzhxDLnbR7e4KQe60HhgrHWcYD13OlxS9QF0C2lMIxCpSRewLA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/goodManners",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"goodManners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/goodManners Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "ahwZ5DnpvJk14MK0y1PBcB6YYsDdtxyIaQLJ8Ok6sTBiXj8tHRSBy27QSNOPuTIXXa1u4JT4kdueIIJzhxDLnbR7e4KQe60HhgrHWcYD13OlxS9QF0C2lMIxCpSRewLA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/goodManners?selection=self",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"goodManners"
+							],
+							"query": [
+								{
+									"key": "selection",
+									"value": "self"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/goodManners",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xLm6flFmq3IUiRPUxWapEshi1jBtmqYqqj7ZSOxasnT0hw6tcOpFtIfDfmp6iZPyHqhYtxMPSM84YR1McFEEeKnRvBgdjsh7m561BlDfrPOl4LG1q8HXKRS04cLZsBQj",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"5e75ecf393e5ca1ca0f9c5b5\",\r\n    \"manner\": \"Say hi when someone else greets you!\",\r\n    \"tags\": [\r\n        \"5e75ec7093e5ca1ca0f9c5b2\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/goodManners",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"goodManners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/goodManners",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xLm6flFmq3IUiRPUxWapEshi1jBtmqYqqj7ZSOxasnT0hw6tcOpFtIfDfmp6iZPyHqhYtxMPSM84YR1McFEEeKnRvBgdjsh7m561BlDfrPOl4LG1q8HXKRS04cLZsBQj",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"5e75ecf393e5ca1ca0f9c5b5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/goodManners",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"goodManners"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ProfileCharacteristics",
+			"item": [
+				{
+					"name": "http://127.0.0.1:3333/profileCharacteristics",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "oxYTZ6iKNXcq5wbYdIfECLbFCQ8R95bnDD65iOa9vsayCB0Z1AHgRpdTyZabEUIC6rXn1bu5l9UlunBMG0PX8Sh8xk0Wpj5EJFMUDAIYeyUoacRT0ArzYzctu8sJ4UVq",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Test\",\n\t\"selectorType\": \"5e792f74025d023a80dc892a\",\n\t\"tags\": [\n\t\t\"5e75ec8c93e5ca1ca0f9c5b3\", \n\t\t\"5e75ec9c93e5ca1ca0f9c5b4\"\n\t\t]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/profileCharacteristics",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"profileCharacteristics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/profileCharacteristics",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xLm6flFmq3IUiRPUxWapEshi1jBtmqYqqj7ZSOxasnT0hw6tcOpFtIfDfmp6iZPyHqhYtxMPSM84YR1McFEEeKnRvBgdjsh7m561BlDfrPOl4LG1q8HXKRS04cLZsBQj",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/profileCharacteristics",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"profileCharacteristics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/profileCharacteristics",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xLm6flFmq3IUiRPUxWapEshi1jBtmqYqqj7ZSOxasnT0hw6tcOpFtIfDfmp6iZPyHqhYtxMPSM84YR1McFEEeKnRvBgdjsh7m561BlDfrPOl4LG1q8HXKRS04cLZsBQj",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"5e792c01025d023a80dc8927\",\r\n    \"name\": \"Test status\",\r\n    \"selectorType\": \"5e792f74025d023a80dc892a\",\r\n    \"tags\": [\r\n        \"5e75ec8c93e5ca1ca0f9c5b3\",\r\n        \"5e75ec9c93e5ca1ca0f9c5b4\",\r\n        \"5e792a4a025d023a80dc891d\",\r\n        \"5e792a6c025d023a80dc891e\",\r\n        \"5e792b35025d023a80dc8926\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/profileCharacteristics",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"profileCharacteristics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/profileCharacteristics",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xLm6flFmq3IUiRPUxWapEshi1jBtmqYqqj7ZSOxasnT0hw6tcOpFtIfDfmp6iZPyHqhYtxMPSM84YR1McFEEeKnRvBgdjsh7m561BlDfrPOl4LG1q8HXKRS04cLZsBQj",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"5e792c01025d023a80dc8927\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/profileCharacteristics",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"profileCharacteristics"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Questions",
+			"item": [
+				{
+					"name": "http://127.0.0.1:3333/questions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "oxYTZ6iKNXcq5wbYdIfECLbFCQ8R95bnDD65iOa9vsayCB0Z1AHgRpdTyZabEUIC6rXn1bu5l9UlunBMG0PX8Sh8xk0Wpj5EJFMUDAIYeyUoacRT0ArzYzctu8sJ4UVq",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"question\": \"Is this a test?\",\n\t\"selectorType\": \"5e792f9b025d023a80dc892c\",\n\t\"answers\": [\n            \"Say hi\",\n            \"Punch him/she\",\n            \"Run\",\n            \"Ignore\"\n        ],\n    \"correctAnswers\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/questions",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"questions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/questions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xLm6flFmq3IUiRPUxWapEshi1jBtmqYqqj7ZSOxasnT0hw6tcOpFtIfDfmp6iZPyHqhYtxMPSM84YR1McFEEeKnRvBgdjsh7m561BlDfrPOl4LG1q8HXKRS04cLZsBQj",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/questions",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"questions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/questions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xLm6flFmq3IUiRPUxWapEshi1jBtmqYqqj7ZSOxasnT0hw6tcOpFtIfDfmp6iZPyHqhYtxMPSM84YR1McFEEeKnRvBgdjsh7m561BlDfrPOl4LG1q8HXKRS04cLZsBQj",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"5e7a3a20c1c13f33b4efde56\",\r\n    \"question\": \"When you meet somebody that you know, you should:\",\r\n    \"selectorType\": \"5e792f9b025d023a80dc892c\",\r\n    \"answers\": [\r\n        \"Say hi\",\r\n        \"Punch him/she\",\r\n        \"Run\",\r\n        \"Ignore\"\r\n    ],\r\n    \"correctAnswers\": [\r\n        \"Say hi\",\r\n        \"Run\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/questions",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"questions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/questions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "nQ7FVRr622H3ujKJ6A1soo3wUMOHOL4MRHhJSU8qFo0IL8adwtK7bVfEiOD2NYeHKVg5Mpr7piNTOFOYSwWVuradaKdvzGNxufPljCcr0044yeXTMv9B2fCp86nAKGEQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"5e7e5082a9691f47a08be3b4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/questions",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"questions"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Evaluations",
+			"item": [
+				{
+					"name": "http://127.0.0.1:3333/evaluations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "oxYTZ6iKNXcq5wbYdIfECLbFCQ8R95bnDD65iOa9vsayCB0Z1AHgRpdTyZabEUIC6rXn1bu5l9UlunBMG0PX8Sh8xk0Wpj5EJFMUDAIYeyUoacRT0ArzYzctu8sJ4UVq",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"title\": \"Test\",\r\n        \"description\": \"a\",\r\n        \"tags\": [],\r\n        \"dificulty\": 5,\r\n        \"questions\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/evaluations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"evaluations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/evaluations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xLm6flFmq3IUiRPUxWapEshi1jBtmqYqqj7ZSOxasnT0hw6tcOpFtIfDfmp6iZPyHqhYtxMPSM84YR1McFEEeKnRvBgdjsh7m561BlDfrPOl4LG1q8HXKRS04cLZsBQj",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/evaluations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"evaluations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/evaluations Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Nv08R9dSWDkvYY1IIICpCJmRg4ybVwkHnJ7HQwjbNXAd3Rs3aiZ1dpaEfWCPVQSk6AXWM84d8mMZOy74cOAn0SjKmF0X1vK4UevLxnnjhvvlbnyEDxGCWCmsGbEJSZe5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/evaluations?selection=self",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"evaluations"
+							],
+							"query": [
+								{
+									"key": "selection",
+									"value": "self"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/evaluations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xLm6flFmq3IUiRPUxWapEshi1jBtmqYqqj7ZSOxasnT0hw6tcOpFtIfDfmp6iZPyHqhYtxMPSM84YR1McFEEeKnRvBgdjsh7m561BlDfrPOl4LG1q8HXKRS04cLZsBQj",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"_id\": \"5e7a3b16c1c13f33b4efde58\",\r\n        \"title\": \"Test evaluation\",\r\n        \"description\": \"test matata\",\r\n        \"tags\": [\r\n            \"5e75ec8c93e5ca1ca0f9c5b3\",\r\n            \"5e75ec9c93e5ca1ca0f9c5b4\",\r\n            \"5e792a4a025d023a80dc891d\",\r\n            \"5e792a6c025d023a80dc891e\",\r\n            \"5e792b35025d023a80dc8926\",\r\n            \"5e792ae8025d023a80dc8923\",\r\n            \"5e792b29025d023a80dc8925\"\r\n        ],\r\n        \"dificulty\": 3,\r\n        \"questions\": [\r\n            \"5e7a3a20c1c13f33b4efde56\",\r\n            \"5e7a3aed4821a833b4402c0f\"\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/evaluations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"evaluations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/evaluations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "nQ7FVRr622H3ujKJ6A1soo3wUMOHOL4MRHhJSU8qFo0IL8adwtK7bVfEiOD2NYeHKVg5Mpr7piNTOFOYSwWVuradaKdvzGNxufPljCcr0044yeXTMv9B2fCp86nAKGEQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\": \"5e8cc72104534d1270090610\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/evaluations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"evaluations"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Results",
+			"item": [
+				{
+					"name": "http://127.0.0.1:3333/results?for=self",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "oxYTZ6iKNXcq5wbYdIfECLbFCQ8R95bnDD65iOa9vsayCB0Z1AHgRpdTyZabEUIC6rXn1bu5l9UlunBMG0PX8Sh8xk0Wpj5EJFMUDAIYeyUoacRT0ArzYzctu8sJ4UVq",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/results?for=self",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"results"
+							],
+							"query": [
+								{
+									"key": "for",
+									"value": "self"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/results",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "oxYTZ6iKNXcq5wbYdIfECLbFCQ8R95bnDD65iOa9vsayCB0Z1AHgRpdTyZabEUIC6rXn1bu5l9UlunBMG0PX8Sh8xk0Wpj5EJFMUDAIYeyUoacRT0ArzYzctu8sJ4UVq",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"evaluationId\": \"5e7a3b16c1c13f33b4efde58\",\n\t\"score\": 55\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/results",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"results"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ConfigureProfile",
+			"item": [
+				{
+					"name": "http://127.0.0.1:3333/configureProfile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "XBPMBSTvgcsdT2weAZUD95AyxPKBGXgAERXtAGYT6amhPygWlN8vlUzTPBg0i3ZbTdHwUS3oKzh22mTWw8IVgkXKSfCYY7EGWeelz9wMdwRgH4Yasb8JVOK7Qkml4QWq",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/configureProfile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"configureProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:3333/configureProfile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "XBPMBSTvgcsdT2weAZUD95AyxPKBGXgAERXtAGYT6amhPygWlN8vlUzTPBg0i3ZbTdHwUS3oKzh22mTWw8IVgkXKSfCYY7EGWeelz9wMdwRgH4Yasb8JVOK7Qkml4QWq",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"tags\": [\"5e792ae8025d023a80dc8923\", \"5e792a85025d023a80dc891f\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/configureProfile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"configureProfile"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "http://127.0.0.1:3333/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"newuser\",\n\t\"password\": \"!secret123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3333/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3333/createAccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"publicname\": \"UserTest\",\n\t\"username\": \"newuser2\",\n\t\"password\": \"!secret123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3333/createAccount",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3333/selectorTypes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "oxYTZ6iKNXcq5wbYdIfECLbFCQ8R95bnDD65iOa9vsayCB0Z1AHgRpdTyZabEUIC6rXn1bu5l9UlunBMG0PX8Sh8xk0Wpj5EJFMUDAIYeyUoacRT0ArzYzctu8sJ4UVq",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3333/selectorTypes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"selectorTypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3333/highscores",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "YCVRFIjwbhYO8sXwbEe8OKTZsHjcoQrVd07j1qtgwrKtNKPN07eCAWOluzP3fUfIxz2Bbug23lYsoblomqoHFC8iQBDDslPt9t6gZa2sk3RIGYp3LBzorK27fG3EBXab",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3333/highscores",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"highscores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3333/rss",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3333/rss",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"rss"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
