@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"gomar.evaluations"}],"uuid":"6a95700baff2465aa90525215801e2d5"}
