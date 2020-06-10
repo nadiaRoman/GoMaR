@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"gomar.goodManners"}],"uuid":"536709cc7218495fb2309e70079474d9"}
