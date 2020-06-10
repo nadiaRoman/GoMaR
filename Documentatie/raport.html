@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang='ro-RO'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="autor">
+        <title>GoMaR::Raport Tehnic</title>
+    </head>
+    <body>
+        <header>
+            <h1>GoMaR (Good Manners Recommender)</h1>
+        </header>
+
+        <section id="descriere">
+            <h2>Descriere</h2>
+            <p>
+                Sa se implementeze o aplicatie Web responsiva ce ofera suport pentru invatarea si recomandarea normelor si reguliilor de comportament (eticheta) 
+				in societate si pe Internet. Pentru fiecare context/eveniment (in)formal – e.g., academic, la serviciu, in familie, la nivel de grup etc. – si categorie 
+				de persoane (in functie de factori demografici, pregatire profesionala, statut social si altele), pe baza profilului utilizatorului se vor sugera informatii 
+				de interes + sfaturi practice comportamentale, de tinuta si/sau de adresare. Sistemul va monitoriza progresul inregistrat de fiecare utilizator in procesul 
+				de invatare, eventual structurata pe niveluri de dificultate. Se va genera, de asemenea, un clasament al celor mai de succes utilizatori, disponibil si ca 
+				flux de date RSS. A se parcurge Society and Culture – Codes of Behaviour and Manners Matter.
+            </p>
+        </section>
+
+        <section id="membri">
+            <h2>Membrii echipei</h2>
+            <ul>
+                <li>
+                    <strong>Dascalu Raluca- Alexandra</strong>(implementarea si actualizarea paginilor:
+                    Home, Highscores, 404)
+                </li>
+                <li>
+                    <strong>Garam Corina</strong>(implementarea si actualizarea paginilor: 
+                    ConfigureProfile, Evaluation, EvaluationTest)
+                </li>
+                <li>
+                    <strong>Roman Nadia- Georgiana</strong>(implementarea si actualizarea paginilor: 
+                    Login, Register, Recommandations)
+                </li>
+            </ul>
+        </section>
+
+        <section id="tehnologii">
+            <h2>Tehnologii utilizate</h2>
+            <ul>
+                <li>
+                    <strong>Dezvoltare Front-end</strong>: HTML, CSS, JavaScript
+                </li>
+                <li>
+                    <strong>Baza de date</strong>: MongoDB
+                </li>
+                <li>
+                    <strong>Dezvoltare Back-end</strong>: NodeJS
+                </li>
+            </ul>
+        </section>
+
+        <section id="metodologii">
+            <h2>Metodologii</h2>
+            <p>
+                In continuare, vom prezenta metodologiile folosite:
+            </p>
+            <p>
+                <strong>HTML</strong>: Cu ajutorul HTML-ului am reusit integrarea paginii noastre 
+                intr-un anumit serviciu Web(vizualizarea site-ului la nivel de browser).
+                Totul plecand de la &lt;html>&lt;/html> (un sablon de cod html) am incercat 
+                realizarea unui proiect cu un aspect destul de atractiv si usor de 
+                inteles pentru utilizatori.    
+            </p>
+            <p>    
+                <strong>CSS</strong>: Am fost folosit CSS-ul pentru stilizarea paginilor in ceea ce priveste 
+                vizualizarea continutului aplicatiei noastre.
+            </p>
+            <p>
+                <strong>Baze de Date</strong>: Ca si metoda de stocare a datelor, a fost folosita o baza 
+                de date NoSQL, si anume MongoDB. Cu ajutorul acesteia putem importa(crea si actualiza) toate 
+				datele referitoare la bunele maniere recomandate, utilizatori, precum si evaluari 
+				(intrebari si rezultatele obtinute de fiecare utilizator). Diagrama de mai jos cuprinde tabelele
+                existente in baza de date.
+            </p>
+			<img src='Diagrams/bd.jpg' alt='poza1'>
+			<p>
+                <strong>NodeJS/JavaScript</strong>: Am utilizat NodeJS pentru a crea un Rest API simplu, fara a 
+				folosi framework-uri sau librarii externe. Am creat doua API-uri, dupa cum urmeaza:
+					<ul>
+							<li>
+								<strong>Primul API</strong>: Am creat un fisier server.js - punctul de pornire al aplicatiei. 
+								Acesta va rula local, la portul 3000. Pentru verificarea existentei unui request, am creat fisierul 
+								service.js. In cazul in care acesta exista, metoda GET din fisierul controller.js verifica daca cererea 
+								este asociata sau nu unei pagini.
+							</li>
+							<li>
+								<strong>Al doilea API</strong>: Pentru afisarea continutului unei pagini web solicitate (in urma request-ului 
+								de la primul API), este apelata metoda POST. In cazul in care request-ul este invalid, userul va fi redirectionat 
+								catre o pagina de eroare.
+							</li>
+					</ul>	
+            </p>
+        </section>
+		
+		<section id="servere">
+			<h2>Servere</h2>
+			<ul>
+					<li>
+							<strong>Server front-end</strong>: Are rolul de a servi clientului informatii pe baza de routing, conform cererii sale.
+					</li>
+					<li>
+							<strong>Server back-end</strong>: Are rolul de a face legatura dintre interfata aplicatiei si baza de date, prin intermediul
+							colectiei postman.
+					</li>
+			</ul>
+		</section>	
+		
+        <section id="admin">
+            <h2>Administratorul</h2>
+            <ul>
+                <li>
+                    Pentru a face modificari in aplicatie, admin-ul foloseste fisiere json pe care le incarca
+					in baza de date MongoDB utilizand colectia Postman creata. In acest fel, admin-ul poate crea 
+					tabele noi sau le poate popula. De asemenea, utilizand MongoDB Compass, administratorul poate
+					adauga noi inregistrari in tabelele existente sau poate sterge informatii precum conturi de 
+					utilizatori, bune maniere, intrebari sau rezultate obtinute.
+					AICI MAI SCRIETI/MODIFICATI VOI CU INFO DESPRE POSTMAN 
+                </li>
+                <li>
+                    Diagrama de mai jos prezinta modul in care interactioneaza administratorul cu aplicatia
+                </li>
+            </ul>
+        </section>
+
+        <section id="github">
+            <h2>Progres</h2>
+            <p>
+                Progresul si lucrul la proiect se poate urmari pe pagina: <a href="https://github.com/nadiaRoman/GoMaR">GoMaR</a>
+            </p>
+        </section>
+    </body>
+</html>
