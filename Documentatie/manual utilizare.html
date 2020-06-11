@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang='ro-RO'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="FII studs">
+        <title>GoMaR::Manual de utilizare</title>
+    </head>
+    <body>
+        <header>
+            <h1>GoMaR (Good Manners Recommender)</h1>
+        </header>
+
+        <section id="descriere">
+            <h2>Descriere</h2>
+            <p>
+                Am creat o aplicatie Web ce ofera suport pentru invatarea si recomandarea normelor si reguliilor de comportament (eticheta) 
+				in societate si pe Internet. Pentru fiecare context/eveniment (in)formal si pe baza profilului utilizatorului se vor sugera informatii 
+				de interes + sfaturi practice comportamentale, de tinuta si/sau de adresare. Sistemul monitorizeaza progresul inregistrat de fiecare utilizator 
+				in procesul de invatare, structurata pe niveluri de dificultate. De asemenea, se poate consulta un clasament al celor mai de succes utilizatori.
+            </p>
+        </section>
+
+        <section id="pagini">
+            <h2>Pagini</h2>
+            <p>
+                Aplicatia noatra contine urmatoarele pagini:
+            </p>
+            <ol>
+                <li>
+                    <strong>Pagina Login</strong>
+                    <ul>
+                        <li>
+                            Aceasta pagina contine numele aplicatiei noastre, doua 
+                            campuri ce trebuie completate de catre utilizatori 
+                            pentru a se loga pe site, precum si doua butoane: “Login” si “Register”. 
+                        </li>
+                        <li>
+                            Cele doua campuri reprezinta username-ul si parola utilizatorului.
+                        </li>
+                        <li>
+                            Prin apasarea butonului “Login”, utilizatorul se 
+                            logheaza in aplicatie, iar prin butonul “Register”, 
+                            utilizatorul poate crea un cont nou.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Pagina Register</strong>
+                    <ul>
+                        <li>
+                            Similar cu pagina Login, aceasta contine numele aplicatiei.
+                        </li>
+                        <li>
+                            Pe langa acesta exista 4 campuri ce trebuie completate pentru
+							ca utilizatorul sa creeze un nou cont: Public name, Username, Password si Confirm Password.
+                        </li>
+                        <li>
+                            Mai exista doua butoane: “Register”, prin care este creat contul cu datele introduse 
+							si “Go to Login” prin care utilizatorul este redirectionat pe pagina Login.
+                        </li>
+                    </ul>
+                </li>
+				<li>
+                    <strong>Pagina principala (Home)</strong>
+                    <ul>
+                        <li>
+                            Dupa logare, utilizatorul este redirectionat pe pagina principala, care contine o recomandare a unei norme comportamentale, 
+							aleasa aleatoriu din baza de date la fiecare refresh al paginii.
+                        </li>
+						<li>
+							Pagina principala poate fi accesata si apasand pe logo-ul "GoMaR", localizat in bara de navigare a aplicatiei.
+						</li>	
+                    </ul>
+                </li>
+                <li>
+                    <strong>Pagina Profile</strong>
+                    <ul>
+                        <li>
+                            Aceasta pagina este dedicata configurarii profilului userului.
+                        </li>
+                        <li>
+                            Userul poate alege informatii precum statut ( Student, Profesor, Parinte etc.),
+							locuri frectentate ( Biserica, Universitate, Cinema etc.) si tara in care isi desfasoara
+							activitatea, informatii pe baza carora ii vor fi recomandate diferite norme comportamentale.
+                        </li>
+                        <li>
+                            Dupa configurarea profilului, utilizatorul poate apasa butonul "Save" pentru salvarea informatiilor.
+							Acesta poate reveni oricand cu modificari asupra informatiilor.
+                        </li>
+                    </ul>
+                </li>
+				<li>
+                    <strong>Pagina Recommandations</strong>
+                    <ul>
+                        <li>
+                            Aceasta pagina contine recomandari de norme comportamentale in functie de caracteristile profilului
+							fiecarui utilizator.
+                        </li>
+                        <li>
+                            Fiecare cartonas are o serie de tag-uri corespunzatoare statutului, locului frecventat sau regiunii in care
+							se poate pune in practica sfatul respectiv.
+                        </li>
+                    </ul>
+                </li>
+				 <li>
+                    <strong>Pagina Evaluation</strong>
+                    <ul>
+                        <li>
+                            Prezinta o serie de teste, fiecare cu un titlu si tag-uri sugestive situatiei in care se aplica bunele maniere evaluate.
+                        </li>
+                        <li>
+                            Testele sunt generate pe baza profilului utilizatorului.
+                        </li>
+                        <li>
+                            Fiecare test are o anumita dificultate, redata de numarul stelutelor colorate din partea stanga a testului.
+                        </li>
+                        <li>
+                            In partea dreapta sunt prezente butonul "Start" pentru inceperea testului si punctajul maxim obtinut la aceasta proba. 
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Pagina EvaluationTest</strong>
+                    <ul>
+                        <li>
+                            Aceasta pagina este dedicata testarii cunostintelor acumulate.
+                        </li>
+                        <li>
+                           Exista o serie de intrebari, fiecare cu multiple variante de raspuns. Cand testul este finalizat, 
+						   butonul "Submit" se apasa si raspunsurile date vor fi colorate in verde sau rosu, in functie de corectitudinea
+						   lor. De asemenea, in coltul din dreapta-jos, va fi afisat punctajul obtinut.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Pagina Highscores</strong>
+                    <ul>
+                        <li>
+                            Aceasta pagina contine un clasament al userilor in functie de punctajul acumulat la evaluarile sustinute.
+                        </li>
+						<li>
+							Rezultatul este suma totala a punctajelor obtinute de user la toate evaluarile sustinute.
+                        </li>
+						<li>
+							Utilizatorii sunt ordonati in ordine descrescatoare dupa punctajul obtinut.
+                        </li>
+                    </ul>
+                </li>
+				<li>
+						In cazul in care utilizatorul doreste sa se deconecteze de pe site, acesta poate apasa butonul <strong>"Logout"</strong> din bara de navigare 
+						a aplicatiei.
+				</li>
+				<li>
+                    <strong>Pagina 404</strong>
+                    <ul>
+                        <li>
+                            Utilizatorul este redirectionat pe aceasta pagina in cazul unui request invalid.
+                        </li>
+						<li>
+                            In aceasta situatie, butonul "come home" este folosit pentru revenirea pe pagina principala.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section id="useri">
+            <h2>Categorii de useri</h2>
+            <p>
+                Utilizatori pot fi persoane de orice varsta, care au acces la internet si doresc sa isi imbunatateasca cunostintele
+				legate de normele comportamentale in societate.
+            </p>
+        </section>
+    </body>
+</html>
