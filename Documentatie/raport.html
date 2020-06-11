@@ -77,25 +77,27 @@
 				datele referitoare la bunele maniere recomandate, utilizatori, precum si evaluari 
 				(intrebari si rezultatele obtinute de fiecare utilizator). Diagrama de mai jos cuprinde tabelele
                 existente in baza de date.
+				Diagrama de mai jos reprezinta structura bazei de date:
             </p>
-			<img src='Diagrams/bd.jpg' alt='poza1'>
-			<p>
-                <strong>NodeJS/JavaScript</strong>: Am utilizat NodeJS pentru a crea un Rest API simplu, fara a 
-				folosi framework-uri sau librarii externe. Am creat doua API-uri, dupa cum urmeaza:
+			<img src='db.png' alt='poza1'>
+			<section>
+				<h2>Componente</h2>
+					<strong>NodeJS/JavaScript</strong>: Am utilizat NodeJS pentru a crea un Rest API simplu, fara a 
+					folosi framework-uri sau librarii externe. Am creat doua API-uri, dupa cum urmeaza:
 					<ul>
 							<li>
 								<strong>Primul API</strong>: Am creat un fisier server.js - punctul de pornire al aplicatiei. 
-								Acesta va rula local, la portul 3000. Pentru verificarea existentei unui request, am creat fisierul 
-								service.js. In cazul in care acesta exista, metoda GET din fisierul controller.js verifica daca cererea 
-								este asociata sau nu unei pagini.
+								Acesta va rula local, la portul 3000. Frontend-ul are acest server care ofera clientului paginile web pe baza de routing.
+								Si anume, clientul face request-uri catre serverul din front-end si acesta il redirectioneaza spre paginile web disponibile in aplicatie identificate prin route/url.
 							</li>
 							<li>
-								<strong>Al doilea API</strong>: Pentru afisarea continutului unei pagini web solicitate (in urma request-ului 
-								de la primul API), este apelata metoda POST. In cazul in care request-ul este invalid, userul va fi redirectionat 
-								catre o pagina de eroare.
+								<strong>Al doilea API(Rest API standalone)</strong>: Am creat un fisier server.js - punctul de preluare a request-urilor destinate bazei de date.
+							 Cu ajutorul acestui server, in backend se verifica tipul de request facut, pentru a sti ce actiune sa se faca pe baza de date.
+							 Analiza integrala a request-ului facut se executa in serverul backend, urmand ca acesta sa fie acceptat sau nu.
+							 
 							</li>
 					</ul>	
-            </p>
+            </section>
         </section>
 		
 		<section id="servere">
@@ -105,8 +107,7 @@
 							<strong>Server front-end</strong>: Are rolul de a servi clientului informatii pe baza de routing, conform cererii sale.
 					</li>
 					<li>
-							<strong>Server back-end</strong>: Are rolul de a face legatura dintre interfata aplicatiei si baza de date, prin intermediul
-							colectiei postman.
+							<strong>Server back-end</strong>: Are rolul de a prelua request-uri de la front-end catre baza de date.
 					</li>
 			</ul>
 		</section>	
@@ -115,17 +116,23 @@
             <h2>Administratorul</h2>
             <ul>
                 <li>
-                    Pentru a face modificari in aplicatie, admin-ul foloseste fisiere json pe care le incarca
-					in baza de date MongoDB utilizand colectia Postman creata. In acest fel, admin-ul poate crea 
-					tabele noi sau le poate popula. De asemenea, utilizand MongoDB Compass, administratorul poate
-					adauga noi inregistrari in tabelele existente sau poate sterge informatii precum conturi de 
-					utilizatori, bune maniere, intrebari sau rezultate obtinute.
-					AICI MAI SCRIETI/MODIFICATI VOI CU INFO DESPRE POSTMAN 
+				    Administratorul interactioneaza cu baza de date prin intermediul aplicatiei Postman. In Postman are la dispozitie 
+					colectia gomarApi prin care face request-uri pentru a popula baza de date, fara a avea cunostinte de MongoDB, 
+					ca si cum ar fi un simplu administrator.
+					De exemplu, un request de tip post, ca sa trateze acel request, verifica existenta token-ului.
+				    Daca exista, verifica daca acesta e valid, daca da, verifica daca e token pentru Admin, daca da, e ok.
+					Atunci are dreptul sa creeze ceva in baza de date, si se uita in body, daca are toate datele corecte la adresa
+					requestului localhost:3000/createUser -> collectia users, va fi creat un user(daca nu lipsesc proprietati pe json). 
+					Daca lipsesc proprietati care sunt required, raspunde clientului (in cazul de fata, postman-ului) cu un mesaj de eroare si un cod pe masura.
+                    In acest fel, daca admin-ul doreste crearea tabelelor noi, va apela la ajutorul dezvoltatorului, ca apoi sa le poate popula.
+					De asemenea, utilizand MongoDB Compass, dezvoltatorul poate adauga noi campuri in tabelele existente sau le poate sterge.
+					Administratorul este userul care are campul isAdmin din baza de date setat pe true.
                 </li>
                 <li>
-                    Diagrama de mai jos prezinta modul in care interactioneaza administratorul cu aplicatia
+                    Diagrama de mai jos prezinta modul in care functioneaza aplicatia:
                 </li>
             </ul>
+			<img src='d1.png' alt='poza1'>
         </section>
 
         <section id="github">
