@@ -6,11 +6,13 @@
             'Authorization': 'Bearer ' + localStorage.getItem("authToken")
         }
     })
-        .then((response) => {
-            if (response.status !== 200) {
+        .then((resp) => {
+            // Check if user is logged in
+            if (resp.status !== 200) {
                 window.location.replace("http://localhost:3000/login");
             } else {
                 response.json().then(function (data) {
+                    // Display random manner
                     document.getElementById("manner").innerText = data[0].manner;
                     document.getElementById("manner-container").style.display = "block";
                 });
